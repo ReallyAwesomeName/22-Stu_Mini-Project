@@ -1,0 +1,92 @@
+* {
+	/* set color variables */
+	--color-text-primary: #dbdbdb;
+	--color-background-primary: #363636;
+	--color-background-secondary: #272727;
+	--color-interact-primary: #4949ff;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	position: relative;
+
+	/* default font */
+	text-align: center;
+	font-family: Arial, sans-serif;
+	/* default colors */
+	color: var(--color-text-primary);
+	background-color: var(--color-background-primary);
+}
+
+header {
+	/* separate header from main with color */
+	background-color: var(--color-background-secondary);
+	position: fixed;
+	top: 0;
+	padding: 15px;
+	width: 100%;
+}
+
+nav ul {
+	padding: 15px;
+}
+
+nav li {
+	display: inline;
+	padding: 20px;
+}
+
+/* nav color */
+a {
+	color: var(--color-text-primary);
+	text-decoration: none;
+}
+
+a:hover, #submit:hover {
+	background-color: var(--color-interact-primary);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+}
+
+main {
+	margin-top: 150px;
+	padding-top: 20px;
+}
+
+section.contactform h2 {
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
+
+section.contactform input {
+	background-color: rgb(68, 68, 68);
+	color: var(--color-text-primary);
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+}
+
+/* submit button */
+#submit {
+	margin-top: 30px;
+	margin-bottom: 50px;
+	padding: 10px;
+	color: var(--color-text-primary);
+
+}
+
+/* separate footer from main */
+footer {
+	bottom: 0;
+	padding: 30px;
+	margin-top: 50px;
+	text-align: center;
+	background-color: var(--color-background-secondary);
+}
